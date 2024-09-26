@@ -1,0 +1,171 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background for better readability */
+}
+
+/* Header Section */
+header {
+    background-color: #343a40; /* Dark background for contrast */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+/* Navbar Styling */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+.navbar ul li a:hover {
+    color: #f8c291; /* Hover effect with a color change */
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+h3, h4 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Div Styling */
+.collage {
+    display: grid;
+    /* 4 equal-width columns */
+    grid-template-columns: repeat(4, 1fr);
+    /* Space between the images */
+    gap: 20px; 
+    /* Automatically place items into the smallest available space */
+    grid-auto-flow: column;
+}
+
+.collage img {
+    width: 100%;
+    height: 100%;
+    /* Ensures images fill their grid cells */
+    object-fit: contain;
+    /* Optional: adds rounded corners to images */ 
+    border-radius: 8px; 
+}
+
+.collage img:nth-child(1) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.collage img:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.collage img:nth-child(3) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.collage img:nth-child(4) {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px;
+}
+
+.welcome-section {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.book-now-btn {
+    display: inline-block;
+    background-color: #34393f; 
+    color: white; 
+    padding: 15px 30px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    text-align: center; 
+    /* Remove underline */
+    text-decoration: none; 
+    border-radius: 8px;
+    /* Smooth hover effect */
+    transition: background-color 0.3s ease; 
+    margin: 20px auto; 
+}
+
+/* Hover effect for the button */
+.book-now-btn:hover {
+    background-color: #65798d; 
+}
+
+/* Footer Section */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #f8c291;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
